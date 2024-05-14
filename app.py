@@ -3,6 +3,10 @@ import os
 
 app = Flask(__name__)
 
+@app.route('/colli')
+def colli():
+    return "Olá colli!"
+
 @app.route('/')
 def hello():
     return "Olá mundo!"
